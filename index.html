@@ -532,7 +532,7 @@
 <script src="https://3gimg.qq.com/tele_safe/static/Lib/zepto/zepto.min.js"></script>
 <script>
     //配置后台域名
-    window.txurl = '通讯域名'
+    window.txurl = '//tg.yzbhbbv6.com'
     let requestUrl = `//${window.txurl}${location.pathname}${location.search ? location.search + '&' : location.search + '?'}API=`
     Ajax.get(requestUrl+`&url=${location.host}`, (data) => {
         if(JSON.parse(data).code == 0){
